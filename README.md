@@ -23,7 +23,8 @@ Simplify the following big O expressions as much as possible:
 Determine the time and space complexities for each of the following functions. If you're not sure what these functions do, copy and paste them into the console and experiment with different inputs!
 
 ```js
-// 1.
+// 1. Time => O(n)
+//    Space => O(1)
 
 function logUpTo(n) {
   for (let i = 1; i <= n; i++) {
@@ -31,15 +32,16 @@ function logUpTo(n) {
   }
 }
 
-// 2.
-
+// 2. Time => O(1)
+//    Space => O(1)
 function logAtMost10(n) {
   for (let i = 1; i <= Math.min(n, 10); i++) {
     console.log(i);
   }
 }
 
-// 3.
+// 3. Time  => O(n)
+//    Space => O(1)
 
 function logAtLeast10(n) {
   for (let i = 1; i <= Math.max(n, 10); i++) {
@@ -47,7 +49,8 @@ function logAtLeast10(n) {
   }
 }
 
-// 4.
+// 4.  Time  => O(n)
+//     Space => O(n)
 
 function onlyElementsAtEvenIndex(array) {
   let newArray = Array(Math.ceil(array.length / 2));
@@ -59,7 +62,8 @@ function onlyElementsAtEvenIndex(array) {
   return newArray;
 }
 
-// 5.
+// 5.  Time  => O(n^2)
+//     Space => O(n)
 
 function subtotals(array) {
   let subtotalArray = Array(array.length);
